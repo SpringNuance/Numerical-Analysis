@@ -1,0 +1,5 @@
+x = [0 0.2 0 -0.8 -1 -0.8 0 1 2 3]; y = [0 1 2 2.2 2 1.8 2 2.1 0 2]; n = length(x);
+t = 0:1:n-1;
+tt = 0:.1:n-1;
+xx = spline(t,x,tt); yy = spline(t,y,tt); hold on 
+comet(xx,yy'), comet(x,y), grid on
